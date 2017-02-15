@@ -346,7 +346,18 @@
         <button type="button" onclick="fire()">Fire</button>
     </div>
 
-
+    <dialog id="window">
+        <h3>Instructions</h3>
+        <p>To play battleship you first need to select where you are going to place your ships</p>
+        <p>Go to "Place Ships", select a ship, a row, column and orientation, the press "Place".</p>
+        <p>Make sure no ships overlap and no ships go out of bounds</p>
+        <p>To start the game, move to Fire</p>
+        <p>Select the row and column you think your opponents ships are placed in, then press "Fire"</p>
+        <p>If you hit your opponents ship the square will turn red, if you miss it will turn green</p>
+        <p>To win you must hit all your opponents ships</p>
+        <button id="exit">Close</button>
+    </dialog>
+    <button id="show">Instructions</button>
 
 </section>
 </body>
@@ -366,5 +377,16 @@
       }
    });
 });
+</script>
+<script>
+    (function() {
+    var dialog = document.getElementById('window');
+    document.getElementById('show').onclick = function() {
+        dialog.show();
+    };
+    document.getElementById('exit').onclick = function() {
+        dialog.close();
+    };
+})();
 </script>
 </html>
