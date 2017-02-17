@@ -32,6 +32,25 @@ dialog {
     padding: 5px 10px 20px 20px;
 }
 
+#ResetGame{
+    position: absolute;
+    top:700px;
+    left: 10px;
+}
+
+#BoardContainer{
+    padding: 10px 10px 10px 10px;
+    width:1000px;
+    height:500px;
+}
+
+#PlayerBoard{
+    float: left;
+}
+
+#CpuBoard{
+    float: right;
+}
 
 /*
 button {
