@@ -58,8 +58,8 @@ dialog {
 
 #ResetGame{
     position: absolute;
-    top:700px;
-    left: 10px;
+    top:50px;
+    right: 50px;
 }
 
 #BoardContainer{
